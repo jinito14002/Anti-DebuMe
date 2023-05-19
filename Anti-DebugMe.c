@@ -2,8 +2,8 @@
 
 Author: jinito14002 (https://github.com/jinito14002)
 References: https://anti-debug.checkpoint.com/techniques/debug-flags.html
-			https://github.com/LordNoteworthy/al-khaser
-			https://github.com/vxunderground/VX-API
+	    https://github.com/LordNoteworthy/al-khaser
+	    https://github.com/vxunderground/VX-API
 
 */
 
@@ -15,7 +15,7 @@ References: https://anti-debug.checkpoint.com/techniques/debug-flags.html
 #define FLG_HEAP_ENABLE_TAIL_CHECK   0x10
 #define FLG_HEAP_ENABLE_FREE_CHECK   0x20
 #define FLG_HEAP_VALIDATE_PARAMETERS 0x40
-#define BLACKLISTARRAY_SIZE			 6    // Number of elements inside the array
+#define BLACKLISTARRAY_SIZE	     6    // Number of elements inside the array
 #define YES	"Yes"
 #define NO	"No"
 
