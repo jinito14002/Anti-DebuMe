@@ -2,11 +2,8 @@
 
 #include <Windows.h>
 
-
-
 #ifndef STRUCTS
 #define STRUCTS
-
 
 typedef struct _UNICODE_STRING {
     USHORT Length;
@@ -54,8 +51,6 @@ typedef struct _LDR_DATA_TABLE_ENTRY {
     LIST_ENTRY ServiceTagLinks;
     LIST_ENTRY StaticLinks;
 } LDR_DATA_TABLE_ENTRY, * PLDR_DATA_TABLE_ENTRY;
-
-
 
 
 typedef struct _PEB

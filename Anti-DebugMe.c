@@ -71,11 +71,11 @@ BOOL IsDebuggerPresentCheck3(PPEB pPeb) {
 	printf(
 		"Normally, when a process is not being debugged, the NtGlobalFlag field in PEB structure contains the value 0x0. \n"
 		"When the process is being debugged, the field will usually contain the value 0x70 indicating these flags are set. \n"
-		"Flag							Value \n"
-		"FLG_HEAP_ENABLE_TAIL_CHECK		0x10 \n"
-		"FLG_HEAP_ENABLE_FREE_CHECK		0x20 \n"
+		"Flag				Value \n"
+		"FLG_HEAP_ENABLE_TAIL_CHECK	0x10 \n"
+		"FLG_HEAP_ENABLE_FREE_CHECK	0x20 \n"
 		"FLG_HEAP_VALIDATE_PARAMETERS	0x40 \n"
-		"Total							0x70 \n"
+		"Total				0x70 \n"
 		"It will only contain 0x70 if the process is created by the debugger, not if it was attached after execution. \n\n"
 		"Is is supported by ScyllaHide?: %s \n",
 		YES
@@ -366,7 +366,7 @@ int main() {
 	while (1){
 
 		printf(
-			"\n-----List of Anti-Debug checking techniques----- \n"
+			"\n----------List of Anti-Debug checking techniques---------- \n"
 			"1. IsDebuggerPresent \n"
 			"2. IsDebuggerPresent Manually \n"
 			"3. IsDebuggerPresent using NtGlobalFlag \n"
@@ -399,9 +399,12 @@ int main() {
 			break;
 		}
 
-		printf("\n");
+		printf("\n\n");
 		if (sscanf_s(input, "%d", &choice) == 1) {
 			if (choice >= 1 && choice <= 10) {
+				printf(
+					"-------------------- Explanation --------------------\n"
+				);
 				if (choice == 2) {
 					DEBUGGING = IsDebuggerPresentCheck2(pPeb);
 				}
