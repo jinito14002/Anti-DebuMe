@@ -9,4 +9,5 @@ The goal of this project is to aggregate those sources and provide a hands-on gu
 
 ![image](https://github.com/jinito14002/Anti-DebugMe/assets/99821230/1c4c79cf-075d-4ff1-8cfc-50a277cc2bc8)  
 
+Load it in IDA with pdb or your favorite debugger, or just run it in the shell to see the explanations.
 This is by no means a list of ALL anti-debug techniques, but I will add as much as I can.
