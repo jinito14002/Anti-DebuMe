@@ -1,6 +1,6 @@
 # Anti-DebugMe
 An Interactive Anti-Debugger check for Reverse Engineers.  
-The purpose is to be able to recognize Windows anti-debug techniques inside x86 assembly for beginners and intermediate malware analysts.  
+The purpose is to be able to recognize Windows anti-debug techniques inside x86 assembly for beginners and intermediate malware analysts.
 Many of the techniques can be bypassed by tools such as ScyllaHide, but it is important to understand how it works on a code level.  
 When I started learning Malware Analysis, there were many (not so great) text-based explanations of anti-debug techniques, and only a few had actual source code or assembly examples.
 To make things worse, many of the them were scattered across the web. (or maybe I was just bad at using Google...)  
